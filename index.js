@@ -33,3 +33,8 @@ let x, y;
 
 x = y = 10 + 5;
 console.log(x); // 15
+console.log(y); // 15
+
+const averageNum = (10 + 10) / 2
+console.log(averageNum) // 10
+
