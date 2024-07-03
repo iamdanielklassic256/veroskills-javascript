@@ -71,3 +71,21 @@ console.log(Number(inputYear) + 19)
 
 
 // type coercion
+
+// if/else statement
+let number = -3;
+
+if (number < 0) {
+	console.log("Number is negative");
+}
+else if (number > 0) {
+	console.log("Number is positive");
+}
+else{
+	console.log("Number is zero");
+}
+
+// FUNCTIONS
+
+
+// ARRAYS
