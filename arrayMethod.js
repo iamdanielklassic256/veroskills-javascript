@@ -9,3 +9,17 @@ const books = [
 ];
 
 const names = ["abra", "bo", "guil", "hanna", "jacob", "kayla"];
+
+const multipliedNumbers = numbers.map(function (num) {
+  return num * 2;
+});
+
+const bookTitles = books.map(function (book, i) {
+  return i + " - " + book.author;
+});
+
+const capitalizedNames = names.map(function (name) {
+  return name.charAt(0).toUpperCase() + name.slice(1);
+});
+
+console.log(capitalizedNames);
