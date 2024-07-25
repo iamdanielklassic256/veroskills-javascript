@@ -22,4 +22,5 @@ const capitalizedNames = names.map(function (name) {
   return name.charAt(0).toUpperCase() + name.slice(1);
 });
 
-console.log(capitalizedNames);
+// console.log(capitalizedNames);
+
