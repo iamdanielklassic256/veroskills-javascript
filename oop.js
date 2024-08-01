@@ -27,19 +27,48 @@ function Person(name, age){
 const arrayNames = ['Daniel', 'Jessica', 'Polline', 'Lorna'];
 
 
-function Person(name){
-	this.name = name
+// function Person(name){
+// 	this.name = name
+// }
+
+// const newArray = [];
+
+
+// for(const name of arrayNames){
+// 	newArray.push(new Person(name))
+// }
+
+// console.log(newArray)
+
+// const [Daniel, Jessica, Polline, Lorna] = newArray;
+
+// console.log(Daniel)
+
+
+const objDaniel = {
+	name: 'Daniel',
+    age: 25,
+	isDev: true,
+    city: 'Kampala'
 }
 
-const newArray = [];
-
-
-for(const name of arrayNames){
-	newArray.push(new Person(name))
+const objJessica = {
+	name: 'Jessica',
+    age: 19,
+	ready: false,
+    city: 'Gulu'
 }
 
-console.log(newArray)
-
-const [Daniel, Jessica, Polline, Lorna] = newArray;
-
-console.log(Daniel)
+const makeTheProtocol = {
+	isReady: function(){
+		if(this.ready){
+			console.log(`Hello, ${this.name} is ready for marriage`)
+		}
+		else{
+            console.log(`Hello, ${this.name} is not ready for marriage yet`)
+        }
+	},
+	getDev: function(){
+		console.log(`${this.name} is a Software Engineer`)
+	}
+}
