@@ -51,3 +51,13 @@ console.log(rejectedObj.mssg)
 
 
 //ASYNCHRONOUS CHALLENGE
+
+fetch('https://swapi.dev/api/people')
+.then((res) => res.json())
+.then((data) => {
+	const firstThreePeope = data?.results.slice(0,3)
+	console.log(firstThreePeope)
+	document.querySelector('.name-1').textContent += firstThreePeope[0].name
+	document.querySelector('.name-2').textContent += firstThreePeope[1].name
+	document.querySelector('.name-3').textContent += firstThreePeope[2].name
+})
